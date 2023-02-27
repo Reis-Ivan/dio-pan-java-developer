@@ -13,15 +13,15 @@ public class Ex4_ArrayMultidimensional {
 
     for (int i = 0; i < 4; i++) {
       for (int j = 0; j < 4; j++) {
-        matrix[i][j] = rnd.nextInt(20);
+        matrix[i][j] = rnd.nextInt(10);
       }
     }
 
-    System.out.println("Matriz gerada: ");
-    for (int i = 0; i < matrix.length; i++) {
+    System.out.print("Matriz gerada: ");
+    for (int[] linha : matrix) {
       System.out.println(" ");
-      for (int j = 0; j < matrix.length; j++) {
-        System.out.print(matrix[i][j] + "\t");
+      for (int coluna : linha) {
+        System.out.print(coluna + "\t");
       }
     }
   }
