@@ -17,10 +17,11 @@ public class Ex4_ArrayMultidimensional {
       }
     }
 
-    for (int i = 0; i < 4; i++) {
+    System.out.println("Matriz gerada: ");
+    for (int i = 0; i < matrix.length; i++) {
       System.out.println(" ");
-      for (int j = 0; j < 4; j++) {
-        System.out.print(matrix[i][j] + " ");
+      for (int j = 0; j < matrix.length; j++) {
+        System.out.print(matrix[i][j] + "\t");
       }
     }
   }
