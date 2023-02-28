@@ -1,18 +1,19 @@
 package src.conceitosBasicos.filas;
 
-public class Fila {
-    private No refNoEntrada;
+public class Fila<T> {
+    private No<T> refNoEntrada;
 
     public Fila() {
         this.refNoEntrada = null;
     }
 
-    public void enqueue(No novoNo) {
+    public void enqueue(T obj) {
+        No novoNo = new No<>(obj);
         novoNo.setRefNo(refNoEntrada);
         refNoEntrada = novoNo;
     }
 
-    public No dequeue() {
+    public T dequeue() {
         if (!this.isEmpty()) {
             No primeiroNo = refNoEntrada;
             No noAuxiliar = refNoEntrada;
@@ -25,14 +26,14 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObject();
         }
         return null;
     }
 
-    public No first() {
+    public T first() {
         if (!this.isEmpty()) {
-            No primeiroNo = refNoEntrada;
+            No<T> primeiroNo = refNoEntrada;
             while (true) {
                 if (primeiroNo.getRefNo() != null) {
                     primeiroNo = primeiroNo.getRefNo();
@@ -40,7 +41,7 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo;
+            return (T) primeiroNo.getObject();
         }
         return null;
     }
