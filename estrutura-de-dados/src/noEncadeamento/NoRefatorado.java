@@ -1,4 +1,4 @@
-package src.conceitosBasicos.noEncadeamento;
+package src.noEncadeamento;
 
 public class NoRefatorado<T> {
 

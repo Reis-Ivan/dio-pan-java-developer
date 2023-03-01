@@ -1,4 +1,4 @@
-package src.conceitosBasicos.filas;
+package src.filas;
 
 public class Fila<T> {
     private No<T> refNoEntrada;

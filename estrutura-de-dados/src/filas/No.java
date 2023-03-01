@@ -1,4 +1,4 @@
-package src.conceitosBasicos.filas;
+package src.filas;
 
 public class No<T> {
     private T object;

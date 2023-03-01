@@ -1,4 +1,4 @@
-package src.conceitosBasicos.noEncadeamento;
+package src.noEncadeamento;
 
 public class Main {
     public static void main(String[] args) {

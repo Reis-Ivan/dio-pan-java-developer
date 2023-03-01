@@ -1,4 +1,4 @@
-package src.conceitosBasicos.atribuicaoReferenia;
+package src.atribuicaoReferenia;
 public class AtribuicaoReferencia {
     public static void main(String[] args) {
 

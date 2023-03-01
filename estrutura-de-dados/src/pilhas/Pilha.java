@@ -1,4 +1,4 @@
-package src.conceitosBasicos.pilhas;
+package src.pilhas;
 
 public class Pilha {
     private No refNoEntradaPilha;
