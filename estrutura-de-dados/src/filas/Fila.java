@@ -8,15 +8,15 @@ public class Fila<T> {
     }
 
     public void enqueue(T obj) {
-        No novoNo = new No<>(obj);
-        novoNo.setRefNo(refNoEntrada);
-        refNoEntrada = novoNo;
+        No<T> novoNo = new No<>(obj);
+        novoNo.setRefNo(this.refNoEntrada);
+        this.refNoEntrada = novoNo;
     }
 
     public T dequeue() {
         if (!this.isEmpty()) {
-            No primeiroNo = refNoEntrada;
-            No noAuxiliar = refNoEntrada;
+            No<T> primeiroNo = this.refNoEntrada;
+            No<T> noAuxiliar = this.refNoEntrada;
             while (true) {
                 if (primeiroNo.getRefNo() != null) {
                     noAuxiliar = primeiroNo;
